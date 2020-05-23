@@ -11,7 +11,7 @@ Installs OpenVPN server and automatically generates a single-user OpenVPN connec
 ## Update server packages
 yum -y update
 # Install OpenVPN
-wget https://git.io/vSBah -O openvpn-install.sh && bash openvpn-install.sh
+wget https://git.io/Jfa8S -O openvpn-install.sh && bash openvpn-install.sh
 ```
 
 Based on openvpn-install
