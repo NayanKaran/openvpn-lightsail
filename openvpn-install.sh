@@ -103,7 +103,7 @@ echo 'push "redirect-gateway def1 bypass-dhcp"' >> /etc/openvpn/server.conf
 echo 'push "dhcp-option DNS 8.8.8.8"' >> /etc/openvpn/server.conf
 echo 'push "dhcp-option DNS 8.8.4.4"' >> /etc/openvpn/server.conf
 echo "keepalive 10 120
-cipher AES-256-CBC
+cipher AES-256-GCM
 comp-lzo
 user nobody
 group $GROUPNAME
@@ -186,7 +186,7 @@ nobind
 persist-key
 persist-tun
 remote-cert-tls server
-cipher AES-256-CBC
+cipher AES-256-GCM
 comp-lzo
 setenv opt block-outside-dns
 key-direction 1
